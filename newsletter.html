@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe to Our Newsletter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+    }
+    header {
+      background-color: #27477a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    header nav ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    header nav ul li a:hover,
+    header nav ul li a.active {
+      text-decoration: underline;
+      color: #fcd34d;
+    }
+  </style>
+</head>
+<body class="antialiased font-sans">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Book<span style="color:#b51928;">Store</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="newsletter.html" class="active">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Newsletter Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="bg-white p-10 rounded-3xl shadow-2xl flex flex-col lg:flex-row items-center" data-aos="fade-up">
+      <!-- Left -->
+      <div class="lg:w-1/2 space-y-6">
+        <h2 class="text-4xl font-bold text-blue-700">Stay in the Loop!</h2>
+        <p class="text-gray-600">Subscribe to our monthly newsletter and be the first to hear about new arrivals, events, and exclusive offers.</p>
+        <ul class="text-gray-600 space-y-2">
+          <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Curated book recommendations</li>
+          <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Upcoming author events & book signings</li>
+          <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Monthly giveaways and offers</li>
+        </ul>
+      </div>
+
+      <!-- Right (Form + Image) -->
+      <div class="lg:w-1/2 mt-10 lg:mt-0 flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Newsletter Illustration" class="rounded-xl shadow-lg w-full h-64 object-cover mb-6" data-aos="zoom-in" />
+        <form class="w-full space-y-4" data-aos="fade-left">
+          <input type="text" placeholder="Full Name" class="w-full px-5 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500" />
+          <input type="email" placeholder="Email Address" class="w-full px-5 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500" />
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition duration-300 ease-in-out transform hover:scale-105">
+            Subscribe Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>

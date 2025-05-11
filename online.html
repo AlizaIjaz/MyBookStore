@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalogue - BookStore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #e8eaf6);
+    }
+
+    header {
+      background-color: #21336c; /* Tailwind blue-800 */
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #facc15;
+      border-bottom: 2px solid #facc15;
+      padding-bottom: 0.2rem;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Book<span style="color:#ca1212;">Store</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="catalogue.html" class="active">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Catalogue Section -->
+  <section class="px-6 py-16 max-w-7xl mx-auto">
+    <div class="text-center mb-16" data-aos="fade-down">
+      <h2 class="text-5xl font-extrabold text-indigo-800 mb-3">Our Catalogue</h2>
+      <p class="text-lg text-gray-600">Discover your next favorite read from our wide collection of books.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12" data-aos="fade-up">
+    
+<!-- Book Card: The Power of Now -->
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+  <img src="powerofnow.jpg.webp" class="w-full h-56 object-cover" alt="The Power of Now Book Cover" />
+  <div class="p-6 space-y-3">
+    <h3 class="text-2xl font-bold text-indigo-700">The Power of Now</h3>
+    <p class="text-gray-600 text-sm">A guide to spiritual enlightenment by Eckhart Tolle, helping readers live fully in the present moment.</p>
+    <button class="mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-xl">
+      View Details
+    </button>
+  </div>
+</div>
+
+
+      <!-- Book Card 2 -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" class="w-full h-56 object-cover" alt="Book Cover" />
+        <div class="p-6 space-y-3">
+          <h3 class="text-2xl font-bold text-pink-700">Atomic Habits</h3>
+          <p class="text-gray-600 text-sm">Tiny changes, remarkable results. By James Clear.</p>
+          <button class="mt-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold px-4 py-2 rounded-xl">
+            View Details
+          </button>
+        </div>
+      </div>
+
+      <!-- Book Card 3 -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="w-full h-56 object-cover" alt="Book Cover" />
+        <div class="p-6 space-y-3">
+          <h3 class="text-2xl font-bold text-green-700">Educated</h3>
+          <p class="text-gray-600 text-sm">A memoir by Tara Westover about overcoming ignorance.</p>
+          <button class="mt-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-xl">
+            View Details
+          </button>
+        </div>
+      </div>
+
+      <!-- More Cards -->
+      <!-- Copy/Paste more blocks like above if needed -->
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+</body>
+</html>

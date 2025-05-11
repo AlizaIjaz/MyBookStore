@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Discover Your Next Favorite Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .book-card {
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #291b55;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #b71e10;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-cart .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .search-cart {
+        margin-top: 10px;
+    }
+
+    .search-cart input {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .cart-icon {
+        font-size: 30px;
+    }
+}
+
+    </style>
+</head>
+<body class="bg-gray-50">
+   
+    <header>
+        <div class="header-container">
+            <div class="logo">Book<span>Store</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events & News</a></li>
+                    <li><a href="online.html">Online Catalogue</a></li>
+                    <li><a href="contact.html">Contact & Address</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" placeholder="Search books...">
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+</body>
+
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+           <!-- Book 2 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="wind.jpg" alt="Winds of Autumn" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Winds of Autumn</h3>
+                    <p class="text-gray-600 text-sm mb-2">Romance</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="coding.jpg" alt="Coding Wizardry" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Coding Wizardry</h3>
+                    <p class="text-gray-600 text-sm mb-2">Tech & Programming</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="blood.jpg" alt="Blood & Roses" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Blood & Roses</h3>
+                    <p class="text-gray-600 text-sm mb-2">Drama</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="light.jpg" alt="Light in the Dark" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Light in the Dark</h3>
+                    <p class="text-gray-600 text-sm mb-2">Inspiration</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="midnight.jpg" alt="Midnight Whispers" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Midnight Whispers</h3>
+                    <p class="text-gray-600 text-sm mb-2">Horror</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="galactic.jpg" alt="Galactic Odyssey" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Galactic Odyssey</h3>
+                    <p class="text-gray-600 text-sm mb-2">Science Fiction</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 8 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="forgotten.jpg" alt="The Forgotten Kingdom" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">The Forgotten Kingdom</h3>
+                    <p class="text-gray-600 text-sm mb-2">Fantasy</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 9 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="echos.jpg" alt="Echoes of War" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Echoes of War</h3>
+                    <p class="text-gray-600 text-sm mb-2">Historical Fiction</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 10 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="quantum.jpg" alt="Quantum Paradox" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Quantum Paradox</h3>
+                    <p class="text-gray-600 text-sm mb-2">Science Fiction</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 11 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="alchemists.jpg" alt="The Alchemist's Secret" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">The Alchemist's Secret</h3>
+                    <p class="text-gray-600 text-sm mb-2">Fantasy</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 12 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="last.jpg" alt="The Last Detective" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">The Last Detective</h3>
+                    <p class="text-gray-600 text-sm mb-2">Mystery</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 13 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="summer.jpg" alt="Summer of '69" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Summer of '69</h3>
+                    <p class="text-gray-600 text-sm mb-2">Historical Fiction</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 14 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="night.jpg" alt="The Night Circus" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">The Night Circus</h3>
+                    <p class="text-gray-600 text-sm mb-2">Fantasy</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 15 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="martian.jpg" alt="The Martian" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">The Martian</h3>
+                    <p class="text-gray-600 text-sm mb-2">Science Fiction</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 16 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="gone.jpg" alt="Gone Girl" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Gone Girl</h3>
+                    <p class="text-gray-600 text-sm mb-2">Thriller</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 17 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="great.jpg" alt="The Great Gatsby" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">The Great Gatsby</h3>
+                    <p class="text-gray-600 text-sm mb-2">Classic</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 18 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="kill.jpg" alt="To Kill a Mockingbird" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">To Kill a Mockingbird</h3>
+                    <p class="text-gray-600 text-sm mb-2">Classic</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 19 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="nine.jpg" alt="1984" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">1984</h3>
+                    <p class="text-gray-600 text-sm mb-2">Dystopian</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            <!-- Book 20 -->
+            <div class="book-card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="pride.jpg" alt="Pride and Prejudice" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Pride and Prejudice</h3>
+                    <p class="text-gray-600 text-sm mb-2">Classic Romance</p>
+                    <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">View</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-amber-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Book Haven. All rights reserved.</p>
+            <p class="mt-2">Powered by Tailwind CSS</p>
+        </div>
+    </footer>
+</body>
+</html>
+
